@@ -4,8 +4,9 @@ name: Hello World Workflow
 # Trigger the workflow on push or pull request to the main branch, Events that trigger this workflow
 on:
   push:
-    pull_request:
-      branches : [main, staging] 
+    branches : [main]
+  pull_request:
+    branches : [main, staging] 
 
 #Job to run
 jobs:
